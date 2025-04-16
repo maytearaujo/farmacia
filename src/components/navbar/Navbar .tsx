@@ -1,4 +1,4 @@
-import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
@@ -10,8 +10,10 @@ const Navbar = () => {
           <p>Projeto FarmaGen</p>
 
           <div className='flex gap-4'>
-            <p>Lista Categorias</p>
-            <p>Cadastrar Categoria</p>
+            <p></p>
+            <p></p>
+            <Link to='/categorias' className='hover:underline'>Lista Categorias</Link>
+            <Link to='/cadastrarcategoria' className='hover:underline'>Cadastrar Categoria</Link>
           </div>
         </div>
       </div>

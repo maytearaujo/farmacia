@@ -9,7 +9,12 @@ const FormularioCategorias = () => {
 
     const navigate = useNavigate();
 
-    const [categoria, setCategoria] = useState<Categoria>({} as Categoria)
+    const [categoria, setCategoria] = useState<Categoria>({
+        id: null,
+        nome: '',
+        descricao: ''
+      }as Categoria)
+      
     const [isLoading, setIsLoading] = useState<boolean>(false)
 
     const { id } = useParams<{ id: string }>();

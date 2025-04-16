@@ -3,7 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom'
 import Categoria from '../../../models/Categoria'
 import { ToastAlerta } from '../../../utils/ToastAlerta'
 import { RotatingLines } from 'react-loader-spinner'
-import { deletar } from '../../../services/Service'
+import { buscar, deletar } from '../../../services/Service'
 
 const DeletarCategoria = () => {
 
@@ -26,7 +26,7 @@ const DeletarCategoria = () => {
         if (id !== undefined) {
             buscarPorId(id)
         }
-    }, [id])
+    }, [categoria])
 
     async function deletarCategoria() {
         setIsLoading(true)
