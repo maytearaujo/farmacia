@@ -7,8 +7,8 @@ const Navbar = () => {
                 flex justify-center py-4'>
 
         <div className="container flex justify-between text-lg">
-          <p>Projeto FarmaGen</p>
-
+          <Link to='/home' className='hover:underline'>Projeto FarmaGen</Link>
+          
           <div className='flex gap-4'>
             <p></p>
             <p></p>
