@@ -3,6 +3,7 @@ import Categoria from '../../../models/Categoria';
 import { useEffect, useState } from 'react';
 import { buscar } from '../../../services/Service';
 import CardCategorias from '../cardCategorias/CardCategorias';
+import { DNA } from 'react-loader-spinner';
 
 const ListaCategorias = () => {
 
@@ -12,8 +13,7 @@ const ListaCategorias = () => {
 
     async function buscarCategorias() {
         try {
-            await buscar('/categorias', setCategorias, {
-            })
+            await buscar('/categorias', setCategorias)
         } catch (error: any) {
             console.log(error.toString().includes('403'))
         }
@@ -21,7 +21,7 @@ const ListaCategorias = () => {
 
     useEffect(() => {
         buscarCategorias()
-    }, [categorias.length])
+    }, [])
 
     return (
         <>
