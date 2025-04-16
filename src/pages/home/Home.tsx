@@ -8,7 +8,8 @@ const Home = () => {
                 Seja Bem Vinde à FarmaGen
             </h2>
             <p className='text-xl'>
-                Expresse aqui seus pensamentos e opniões
+            Se até seu deploy precisa de saúde,
+            imagina você.
             </p>
 
             <div className="flex justify-around gap-4">

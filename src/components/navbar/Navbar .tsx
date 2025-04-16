@@ -10,9 +10,6 @@ const Navbar = () => {
           <p>Projeto FarmaGen</p>
 
           <div className='flex gap-4'>
-
-
-
             <p>Lista Categorias</p>
             <p>Cadastrar Categoria</p>
           </div>
