@@ -66,8 +66,8 @@ const DeletarCategoria = () => {
                 </header>
                 <div>
 
-                    <p className='p-8 text-3xl bg-slate-200 h-full'>Nome: {categoria.nome}</p>
-                    <p className='p-8 text-3xl bg-slate-200 h-full'>Descrição: {categoria.descricao}</p>
+                    <p className='p-8 text-3xl bg-slate-200 h-full'>{categoria.nome}</p>
+                    <p className='p-8 text-3xl bg-slate-200 h-full'>{categoria.descricao}</p>
                 </div>
                 <div className="flex">
                     <button
